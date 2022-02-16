@@ -4,38 +4,60 @@
     left: 0;
     width: 100%;
     height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background: $color-bg-dark;
     color: $color-primary;
 
-    .logo {
-        padding: 0.25rem 2rem;
-    }
 
-    .profile {
-        font-size: 2rem;
-        cursor: pointer;
-        
+    .header-left {
+        position: relative;
+        display: flex;
+            align-items: center;
+                justify-content: space-between;
+                width: 100%;
+        .logo {
+            padding: 0 2rem;
+            width: 25%;
+        }
+    
+        .profile {
+            width: 25%;
+            margin-right: auto;
+            padding-top: 0.5rem;
+            font-size: 2rem;
+            text-align: center;
+            cursor: pointer;
+            @media(max-width: 60em) {
+                margin-right: 0;
+            }
+            
+        }
+
     }
 }
 
 .nav {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     color: $color-text-alt;
+    width: 100%;
+    height: 100%;
+    
     
     .nav-list {
-        display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    
+    margin-right: 5rem;
     }
 
     .nav-list .nav-item {
         list-style-type: none;
         color: $color-primary;
-        padding: 0.25rem 1rem;
+        padding: 0 2rem;
         cursor: pointer;
 
         a {
@@ -45,5 +67,62 @@
         :hover {
             color: $color-text-light;
         }
+    }
+}
+
+@media(max-width: 60em) {
+
+    .nav {
+        position: relative;
+        top: 8vh;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        display: block;
+        background: rgba(0, 0, 0, 0.808);
+        color: $color-text-alt;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transform: translateX(150%);
+        transition: all 0.4s ease-in-out;
+    
+        
+        .nav-list {
+            position: relative;
+            margin: 8vh auto 0;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .nav-list .nav-item {
+            list-style-type: none;
+            color: $color-primary;
+            padding: 2rem 0;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+    
+            a {
+                text-decoration: none;
+                font-size: 2.5rem;
+            }
+            :hover {
+                color: $color-dc-one;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .nav.active {
+        transform: translateX(0%);
+        margin: 0;
+        padding: 0;
+        top: 8vh;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        opacity: 1;
+        
     }
 }
