@@ -45,13 +45,13 @@ h1 span {
   .primary {
    font-size: $base-font-size;
    font-weight: $base-border-thickness;
-   color: $primary;
+   color: $color-primary;
    margin: $base-margin;
   }
   
   .secondary {
     font-size: $font-size-sm;
-    color: $secondary;
+    color: $color-secondary;
     margin: $base-margin;
   }
   
@@ -93,11 +93,11 @@ h1 span {
   }
 
   .btn-primary {
-    background-color: $primary;
+    background-color: $color-text-alt;
   }
 
   .btn-secondary {
-    background-color: $secondary;
+    background-color: $color-wrapper;
   }
   .btn-info {
     background-color: $info;

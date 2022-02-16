@@ -7,9 +7,43 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(99, 89, 89, 0.61);
+    background: $color-bg-dark;
+    color: $color-primary;
+
+    .logo {
+        padding: 0.25rem 2rem;
+    }
+
+    .profile {
+        font-size: 2rem;
+        cursor: pointer;
+        
+    }
 }
 
 .nav {
+    position: relative;
+    color: $color-text-alt;
     
+    .nav-list {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .nav-list .nav-item {
+        list-style-type: none;
+        color: $color-primary;
+        padding: 0.25rem 1rem;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+        }
+        :hover {
+            color: $color-text-light;
+        }
+    }
 }
