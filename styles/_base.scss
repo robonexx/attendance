@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* { 
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: $color-bg-light;
+    margin: 0 auto;
+}
+
+h1 span {
+  text-align: center;
+  color: $color-text-primary;
+  text-shadow: 0px 5px 5px $color-shadow-1, 0 10px 10px $color-shadow-2;
+  font-size: $font-size-xxl;
+  text-transform: uppercase;
+}
+
+.container {
+    width: 80vw;
+    height: 20vh;
+    background-color: $color-wrapper;
+    padding: $base-padding;
+    display: flex;
+    margin: $base-margin;
+    box-shadow: 1px 3px 5px rgba(143, 143, 143, 0.3), 3px 6px 10px rgba(143, 143, 143, 0.6);
+
+}
+
+.box1 {
+  margin: $base-margin;
+}
+  
+  .primary {
+   font-size: $base-font-size;
+   font-weight: $base-border-thickness;
+   color: $primary;
+   margin: $base-margin;
+  }
+  
+  .secondary {
+    font-size: $font-size-sm;
+    color: $secondary;
+    margin: $base-margin;
+  }
+  
+  .info {
+    font-size: $base-font-size;
+    color: $info;
+    margin: $base-margin;
+  }
+  
+  .error {
+    font-size: $base-font-size;
+    color: $error;
+    margin: $base-margin;
+  }
+  
+  .box2 {
+    margin: $base-margin;
+  }
+
+  .text-prim {
+    font-size: $base-font-size;
+    color: $color-text-primary;
+    margin: $base-margin;
+    
+  }
+  .text-sec {
+    font-size: $base-font-size;
+    color: $color-text-secondary;
+    margin: $base-margin;
+    
+  }
+
+  .btn {
+    padding: $base-padding;
+    border-radius: $base-border-radius;
+    margin: $base-margin;
+    color: $color-text-light;
+    font-size: $font-size-sm;
+  }
+
+  .btn-primary {
+    background-color: $primary;
+  }
+
+  .btn-secondary {
+    background-color: $secondary;
+  }
+  .btn-info {
+    background-color: $info;
+  }
+  .btn-error {
+    background-color: $error;
+  }
+
+  .box4 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      padding: $base-padding;
+      margin: 0;
+      width: 80%;
+      height: fit-content;
+      background-color: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: $font-size-lg;
+        span {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+
+    @media (max-width: 40em) {
+      flex-direction: column;
+    }
+
+  }
+  

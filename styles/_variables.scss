@@ -1,0 +1,67 @@
+
+// variables
+
+
+// colors 
+
+// theme colors 
+$primary: #326dee;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+
+
+
+// colors extended
+$hue-color: 250;
+$color-primary: #f7f7f7;
+$color-secondary: #e2e2e2;
+$color-error: tomato;
+$color-info: #ccc;
+
+$color-text-primary: #8b70dd;
+$color-text-secondary: #6543CB;
+
+$color-text-alt: #b0b2c3;
+$color-text-light: #fff;
+$color-body: #f8f8f8;
+$color-wrapper: #252329;
+$color-container: #1F4575;
+
+$color-shadow-1: #072142;
+$color-shadow-2:#4E5F72;
+$color-shadow-3: #2A3D53;
+
+$color-bg-dark: #282828;
+$color-bg-light: #efefef;
+
+
+// font family
+$body-font: 'Inter', sans-serif;
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+
+// spacing 
+$base-margin: 0.75rem;
+$base-padding: 0.75rem;
+
+
+// base border styles
+$base-border-radius: 20px;
+$base-border-thickness: 1px;
+
+// z-index
+$z-normal: 10;
+$z-fixed: 100;
+$z-front: 1000;
+
+
+// box shadow
+$base-box-shadow: rgba(0,0,0,0.4);
+$base-box-shadow-light: 0px 3px 10px rgba(15, 15, 15, 0.3), 0px 6px 10px rgba(17, 17, 17, 0.6);
